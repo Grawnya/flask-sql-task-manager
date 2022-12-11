@@ -13,7 +13,7 @@ class Category(db.Model):
     def __repr__(self):
         # '__repr__' to represent itself in the form of a string
         # it means to represent the class object as a string
-        return f'#{self.id} - Task: {self.task_name} | Urgent: {self.is_urgent}'
+        return self.category_name
 
 
 class Task(db.Model):
